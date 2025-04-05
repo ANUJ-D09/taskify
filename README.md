@@ -1,19 +1,21 @@
+# 🗂️ Taskify Sheet
 
-# Taskify
+Taskify Sheet is a basic drag-and-drop task manager built using **HTML**, **CSS**, and **JavaScript**. It allows users to add tasks with a due date and priority, and then move them across different stages: To-Do, In-Progress, Under-Review, and Finished.
 
-- Create a Task Management Application with drag-drop functionality between the category.
+---
 
-- you can avoid time, and type of TODO (easy, medium, hard).
+## 🚀 Features
+
+- Add new tasks with:
+  - Task name
+  - Due date
+  - Priority (High, Medium, Low)
+- Automatically generates task cards
+- Drag and drop tasks between sections
+- Simple and clean responsive UI
+
+---
+
+![image](https://github.com/user-attachments/assets/963c9664-82f2-49d3-9d36-8fbce2c016fe)
 
 
-- The UI should resemble the example shown below..
-
-![Image](https://utfs.io/f/c63f4dc5-6833-4c65-9b07-e1421d833ee2-ng18dw.png)
-
-
-
-### Don't copy UI as it is, only take reference from it.
-
-
-
-# taskify
