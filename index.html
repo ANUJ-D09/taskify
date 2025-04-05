@@ -6,11 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>taskify Sheet</h1>
-    <h2>start</h2>
+    <h1>Taskify Sheet</h1>
+    <div id="master">
+        <div id="section1">
+
+
+            <h3>To-Do</h3>
+            <div class="taskdisplay" id="taskdisplay">
+
+            </div>
+            <div id="adding-task">
+                <input type="text" placeholder="Enter task" id="text">
+                <input type="date" id="date" name="date">
+
+
+                <select id="priority">
+        <option value="" disabled selected>Select priority</option>
+        <option value="high">🔴 High</option>
+        <option value="medium">🟠 Medium</option>
+        <option value="low">🟢 Low</option>
+    </select>
+
+                <input type="button" value="Add task" id="button" onclick="tasks()">
+            </div>
+        </div>
+        <div id="section2 ">
+            <h3>In-progress</h3>
+
+
+        </div>
+        <div id="section3 ">
+            <h3>Under-review</h3>
+
+
+        </div>
+        <div id="section4 ">
+            <h3>Finished</h3>
+
+
+        </div>
+    </div>
+    <script src="index.js "></script>
 </body>
 
 </html>

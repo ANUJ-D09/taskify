@@ -1,0 +1,130 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #A1E3F9;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #03346E;
+}
+
+
+/* Master Container */
+
+#master {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* Common Section Style */
+
+#master>div {
+    flex: 1;
+    min-width: 220px;
+    max-width: 23%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Section Headers */
+
+#master h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #03346E;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+
+/* Add Task Form */
+
+#adding-task {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#adding-task input[type="text"],
+#adding-task input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+#adding-task input[type="text"]:focus,
+#adding-task input[type="date"]:focus {
+    border-color: #007bff;
+}
+
+#adding-task input[type="button"] {
+    padding: 10px;
+    background-color: #03346E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#adding-task input[type="button"]:hover {
+    background-color: #60B5FF;
+}
+
+#adding-task select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+#adding-task select:focus {
+    border-color: #007bff;
+}
+
+
+/* Optional: Priority tag styles for tasks (you can use in JS later) */
+
+.priority-high {
+    color: #FB4141;
+    font-weight: bold;
+}
+
+.priority-medium {
+    color: #FFC145;
+    font-weight: bold;
+}
+
+.priority-low {
+    color: #5CB338;
+    font-weight: bold;
+}
+
+.task-card {
+    background-color: #f4f4f4;
+    border-left: 5px solid #2196f3;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
