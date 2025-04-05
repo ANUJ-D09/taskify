@@ -103,9 +103,6 @@ h1 {
     border-color: #007bff;
 }
 
-
-/* Optional: Priority tag styles for tasks (you can use in JS later) */
-
 .priority-high {
     color: #FB4141;
     font-weight: bold;
@@ -127,4 +124,42 @@ h1 {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 8px;
+}
+
+
+/* Task card style */
+
+.task-card {
+    background-color: #fefefe;
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: grab;
+    transition: box-shadow 0.2s ease;
+}
+
+.task-card:active {
+    cursor: grabbing;
+    opacity: 0.6;
+}
+
+
+/* Highlight card while dragging */
+
+.task-card.dragging {
+    opacity: 0.5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Drop zone style */
+
+#master>div {
+    transition: background-color 0.3s ease;
+}
+
+#master>div.drag-over {
+    background-color: #e6f7ff;
+    border: 2px dashed #33aaff;
 }

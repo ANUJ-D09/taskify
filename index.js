@@ -6,9 +6,18 @@ function tasks() {
 
     const newtask = document.createElement("div");
     newtask.classList.add("task-card");
+    const taskId = "task-" + Date.now(); // unique ID
+    newtask.id = taskId;
+    newtask.addEventListener("dragstart", (e) => {
+        e.dataTransfer.setData("text/plain", taskId);
+    });
 
-    newtask.innerHTML = `
-      <div class="task-details">
+
+    newtask.innerHTML =
+
+
+        `
+      <div class="task-details" draggable="true">
         <p><strong>Task:</strong> ${text}</p>
         <p><strong>Due Date:</strong> ${dateis}</p>
         <p><strong>Priority:</strong> ${priorityis}</p>
@@ -17,4 +26,15 @@ function tasks() {
 
     display.appendChild(newtask);
 
+}
+
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function drop(event) {
+    event.preventDefault();
+    const taskId = event.dataTransfer.getData("text/plain");
+    const taskCard = document.getElementById(taskId);
+    event.currentTarget.querySelector(".taskdisplay").appendChild(taskCard);
 }
